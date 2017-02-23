@@ -1,0 +1,8 @@
+title: DARS 2015
+description: "The First Workshop on Design and Analysis of Robust Systems "
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
+
+gems:
+  - jekyll-mentions
