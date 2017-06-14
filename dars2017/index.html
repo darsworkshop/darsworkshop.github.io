@@ -192,6 +192,33 @@ Easychair using the above link.
 
     
 </div>
+        <div id="invited">
+
+<table class="service">
+                        <tbody>
+                            <tr>
+                                <td style="text-align: left">
+                                    <b>Robustness, Mori-Zwanzig Model Reduction, and Statistical Validation of Hybrid Systems.</b> <br>
+                                    Geir E. Dullerud, University of Illinois <br>
+                                    Abstract: In this talk we first discuss different notions of robustness for hybrid systems, using concepts from control theory as motivation. We then introduce a new approach for classifying robustness in hybrid systems and present a method for statistical verification. In particular, we focus on a computational approach to verification of mathematical models that are formed when combining physics-based models with discrete-transition models, such as those which model software algorithms. Namely, the mathematical models that arise when for instance considering Cyberphysical Systems, or the Internet of Things. During the first part of the talk will concentrate on system verification, and will present a new verification algorithm for continuous-time stochastic hybrid systems, whose specifications are expressed in metric interval temporal logic (MITL), by deploying a novel model reduction method. By partitioning the state space of the hybrid system and computing the optimal transition rates between partitions, we provide a procedure to both reduce the system to a continuous-time Markov chain, and the associated specification formulas. We prove that the unreduced formulas hold (or do not) if the corresponding reduced formula on the Markov chain is robustly true (or false) under certain perturbations. In addition, a stochastic algorithm to complete the verification has been developed. We have extended the approach of this algorithm, and have developed a direct stochastic algorithm for probabilistically verifying a certain hybrid system class, and applied this technique to an extensive benchmark problem with realistic dynamics. The second part of the talk: In many game theory and filtering problems it is not possible to analytically obtain solutions for statistical properties of systems under study, and here we will describe our recent work on principle-based numerical approaches to obtaining estimates of these properties, and the application of the techniques developed in the verification framework above. Monte Carlo simulation of Markov processes allows the numerical estimation of their statistical properties from an ensemble of sample system paths. We present methods for generating reduced-variance path ensembles for the tau-leaping discrete-time simulation algorithm, which allows mean stochastic process dynamics to be estimated with substantially smaller ensemble sizes. Our methods are based on antithetic and stratified sampling of Poisson random variates, and we provide a combination of analytical proofs and numerical evidence for their performance, which can frequently be a 2-3 orders of magnitude improvement over standard Monte Carlo. Application examples will be discussed.
+                                    <p></p>
+                                    Bio: Geir E. Dullerud is the W. Grafton and Lillian B. Wilkins Professor in Mechanical Engineering at the University of Illinois at Urbana-Champaign. There he is also a member of the Coordinated Science Laboratory, where he is Director of the Decision and Control Laboratory (21 faculty); he is an Affiliate Professor of both Computer Science, and Electrical and Computer Engineering. He has held visiting positions in Electrical Engineering KTH, Stockholm (2013), and Aeronautics and Astronautics, Stanford University (2005-2006). Earlier he was on faculty in Applied Mathematics at the University of Waterloo (1996-1998), after being a Research Fellow at the California Institute of Technology (1994-1995), in the Control and Dynamical Systems Department. He has published two books: "A Course in Robust Control Theory", Texts in Applied Mathematics, Springer, 2000, and "Control of Uncertain Sampled-data Systems", Birkhauser 1996. His areas of current research interests include hybrid dynamical systems, convex optimization in control, cyber-physical system security, cooperative robotics and stochastic simulation. In 1999 he received the CAREER Award from the National Science Foundation, and in 2005 the Xerox Faculty Research Award at UIUC. He is a Fellow of both IEEE (2008) and ASME (2011).
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left">
+                                    <b>Analyzing Neural Network Robustness with Constraints	</b> <br>
+                                    Dimitrios Vytiniotis, Microsoft<br>
+                                    Abstract: Despite having high accuracy, neural nets have been shown to be susceptible to adversarial examples, where a small perturbation to an input can cause it to become
+                                    misclassified. In this talk I will give some metrics for measuring the robustness of a neural net and present an algorithm for approximating these metrics based on an encoding of robustness as a linear program. I will describe how one implements an “abstract interpreter” specifically tailored to neural networks, and how to use ideas from formal verification to scale the constraint generation and solving as needed for modern deep learning architectures. We show that our algorithm generates more informative estimates of robustness compared to estimates based on existing algorithms in the deep learning community. Our techniques were used to additionally marginally improve neural net robustness both according to the metrics that we propose, but also according to previously proposed metrics, although effective solutions to improving robustness remain elusive.<br>
+                                </td>
+                            </tr>             
+                        </tbody>
+</table>
+        
+
+    </div>
         
         <div id="accepted">
 
@@ -206,27 +233,47 @@ Easychair using the above link.
                             </tr>
                             <tr>
                                 <td style="text-align: left">
-                                    Stabilizing Numeric Programs against Platform Uncertainties.
+                                    <b>Stabilizing Numeric Programs against Platform Uncertainties.</b>
                                     <br>
                                     Yijia Gu and Thomas Wahl.<br> 
+                                    Abstract: Floating-point arithmetic (FPA) is a loosely standardized approximation of real arithmetic available on many computers today. The use of approximation incurs commonly underestimated risks for the reliability of numeric software, including reproducibility issues caused by the relatively large degree of freedom for FPA implementers offered by the IEEE 754 standard. If left untreated, such problems can seriously interfere with program portability. <br>
+
+                                    In this paper we discuss numeric programs' lack of robustness against platform variations, including irreproducible control flow and invariants that hold on some platforms but not others. We also demonstrate how, using information on the provenance of platform dependencies, such reproducibility violations can be repaired, which results in stabilized program execution. We illustrate the use of this technique on decision-making and other numeric programs, and present an outlook to its applicability to solving reproducibility issues among CPU and GPU versions 
+                                    of kernel support vector machines. <br>
+
+                                    Based in part on work published at EUROPAR 2015 and VMCAI 2017.
                                 </td>
                             </tr>
                             <tr>
                                 <td style="text-align: left">
-                                    Recent Advances in Designing Robust Probabilistic Systems. <br>
+                                    <b>Recent Advances in Designing Robust Probabilistic Systems.</b> <br>
                                     Radu Calinescu, Milan Ceska, Simos Gerasimou, Marta Kwiatkowska and Nicola Paoletti.<br>
+                                    Abstract: Robust systems are of great interest because they can withstand changes in the system parameters and 
+                                    do not expose users to large variations in quality attributes. This paper presents our recent results on automating the design of robust probabilistic systems. We integrate search-based design strategies with formal analysis of parametric Markov models, and introduce sensitivity-aware synthesis of Pareto-optimal sets of designs providing useful tradeoffs between quality attributes and sensitivity. The synthesis algorithms are implemented in our publicly available tool RODES and evaluated on several case studies from different domains. The experiments demonstrate that our approach provides unique insights into how the parameters affect the system dynamics and robustness.<br>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="text-align: left">
-                                    Martingales for Probabilistic Termination and Safety. <br>
+                                    <b>Martingales for Probabilistic Termination and Safety.</b> <br>
                                     Krishnendu Chatterjee, Petr Novotný and Djordje Zikelic.<br>
+                                    Abstract: We address the problem of automated proofs of reachability and safety properties for linear-arithmetic probabilistic programs with nondeterminism. We define the notion of stochastic invariants, which are constraints along with a probability bound that the constraints hold. We introduce a concept of repulsing supermartingales. First, we show that repulsing supermartingales can be used to obtain bounds on the probability of the stochastic invariants. Second, we show the effectiveness of repulsing supermartingales in the following three ways: (1)~With a combination of ranking and repulsing supermartingales we can compute lower bounds on the probability of termination; (2)~repulsing supermartingales provide witnesses for refutation of almost-sure termination; and (3)~with a combination of ranking and repulsing supermartingales we can establish persistence properties of probabilistic programs. <br>
+                                    We also present results on related computational problems and an experimental evaluation of our approach on academic examples.<br>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="text-align: left">
-                                    A CEGAR approach for stability verification of linear hybrid systems	 <br>
+                                    <b>A CEGAR approach for stability verification of linear hybrid systems	</b> <br>
                                     Miriam García Soto.<br>
+                                    Abstract: This document summarizes results related to an algorithmic approach 
+                                    for stability analysis of linear hybrid systems. 
+                                    Classical approaches rely on Lyapunov function search and suffer 
+                                    from numerical issues. In addition, an unsuccessful template for the 
+                                    Lyapunov function does not provide insights on the choice of a better 
+                                    template. 
+                                    To overcome these issues, we present a counterexample guided-abstraction 
+                                    refinement (\cegar) approach which iteratively searches for a stability 
+                                    certification over an abstract system, and provides insights to obtain 
+                                    more accurate abstract systems if needed.<br>
                                 </td>
                             </tr>             
                         </tbody>
