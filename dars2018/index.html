@@ -255,9 +255,87 @@ Easychair using the above link.
 
 <div id="abstracts">
 
-<h5>Invited Talks</h5>
+<h5>Keynote Presentations</h5>
 <p></p>
-<b>TBA</b> <br>
+<b>Measuring robustness for cyber-physical systems: real-world experiences and challenges </b> <br>
+                                  Jim Kapinski, Toyota
+     <br>
+                                  Abstract: Robust performance is crucial for cyber-physical systems
+(CPS), as they often appear in mission critical applications, such as medical devices, automobiles, and aircraft. Testing is required to ensure robust performance for CPS, but measuring and quantifying robust performance based on test results is not well supported by existing formalisms. For example, a control engineer testing a system may have an expectation regarding step-response behavior, which assumes that when a step is provided as an input to the system, an appropriate step-response results at the output of the system. But additionally, for an input that is similar to a step input, an output that is similar to a step-response is expected. This similarity notion, we argue, can be difficult to capture precisely using existing methods. This talk describes the related industrial CPS challenges in defining and measuring robust performance, presents some illustrative testing results, and suggests possible directions for solutions, including hybrid methods that combine formal and informal methods for measuring robust performance.
+                                  <p></p>   
+                                  Bio: Jim Kapinski is a Senior Principal Scientist at the Toyota Research Institute of North America. He received his Ph.D. in Electrical and Computer Engineering from Carnegie Mellon University in 2005 and was a postdoctoral researcher at CMU from 2007 to 2008. He went on to found and lead Fixed-Point Consulting, serving clients in the defense, aerospace, and automotive industries. He has been with Toyota since 2012, where his work focuses on advanced research into verification and analysis of cyber-physical systems.
+    
+<hr>  
+<b>Robust to Dynamics Optimization </b> <br>
+                                    Amir Ali Ahmadi, Princeton<br>
+                                    Abstract: We study a new type of robust optimization problems that we call "robust to dynamics optimization" (RDO). The input to an RDO problem is twofold: (i) a mathematical program (e.g., an LP, SDP, IP), and (ii) a dynamical system (e.g., a linear, nonlinear, discrete, or continuous dynamics). The objective is to maximize over the set of initial conditions that forever remain feasible under the dynamics. We initiate an algorithmic study of RDO and demonstrate tractability of some important cases. Joint work with Oktay Gunluk from IBM Research.
+                                    <p></p>   
+                                    Bio: <a href="http://aaa.princeton.edu/">Amir Ali Ahmadi</a> is an Assistant Professor at the Department of Operations Research and Financial Engineering at Princeton University and an Associated Faculty member of the Program in Applied and Computational Mathematics, the Department of Computer Science, and the Department of Mechanical and Aerospace Engineering. Amir Ali received his PhD in EECS from MIT and was a Goldstine Fellow at the IBM Watson Research Center prior to joining Princeton. His research interests are in optimization theory, computational aspects of dynamics and control, and algorithms and complexity. Amir Ali's distinctions include the Sloan Fellowship in Computer Science, the NSF CAREER Award, the AFOSR Young Investigator Award, the DARPA Faculty Award, the Google Faculty Award, the Howard B. Wentz Junior Faculty Award of Princeton University, the Innovation Award of the School of Engineering at Princeton University, the Goldstine Fellowship of IBM Research, and the Oberwolfach Fellowship of the NSF. His undergraduate course on ``Computing and Optimization’' has received the 2017 Excellence in Teaching of Operations Research Award of the Institute for Industrial and Systems Engineers and the 2017 Phi Beta Kappa Award for Excellence in Undergraduate Teaching at Princeton University. Amir Ali is also the recipient of a number of best-paper awards, including the INFORMS Computing Society Prize (for best series of papers at the interface of operations research and computer science), the Best Conference Paper Award of the IEEE International Conference on Robotics and Automation, and the prize for one of two most outstanding papers published in the SIAM Journal on Control and Optimization in 2013-2015.
+
+    <hr>
+<p></p>
+<h5>Technical Presentations</h5>
+<p></p>
+
+<b>A quantitative approach on safety, reachability and stability specification </b> <br>
+                                    Alina Eqtami and Antoine Girard.<br>
+                                    Abstract: We present a methodology for designing controllers for transition systems ensuring that the controlled system will fulfill some common objectives. Focusing on safety we are also extending these results to reachability and stability specifications. Unlike the traditional set-theoretical methods that tackle these problems in a qualitative way by simply partitioning states between being safe or not, this approach relies in a quantified measure that can answer on whether a particular state is safer than another, irrespectively if it belongs to the safe set or not. An overview of the quantitative approach is given, while some simulation results are illustrating the efficacy of the proposed method.<br>
+<hr>
+
+<b>Measuring Neural Net Robustness </b> <br>
+                                    Osbert Bastani, Yani Ioannou, Leonidas Lampropoulos, Dimitrios Vytiniotis, Aditya V. Nori and Antonio Criminisi.<br>
+                                    Abstract: Neural nets have been shown to be susceptible to adversarial examples, where a small perturbation to an input can cause it to become mislabeled. We propose metrics for measuring the robustness of a neural net and devise a novel algorithm for approximating them. We show how existing approaches to improving robustness "overfit" to adversarial examples generated using a specific algorithm.<br>
+<hr>
+
+<b>A CEGAR Approach for Hybrid Systems Reachability Analysis </b> <br>
+                                    Stefan Schupp and Erika Abraham.<br> 
+                                    Abstract: Naturally, faster computations come with less precision and more spurious counterexamples. To remove a spurious counterexample, the only possibility offered by current tools is to reduce the error by re-starting the complete search with different parameters. In this paper we report on a CEGAR approach that takes as input a user-defined ordered list of search configurations, which are used to dynamically refine the search tree along potentially spurious counterexamples. <br>
+<hr>
+ 
+<b>Probabilistic Bounded Reachability for Stochastic Hybrid Systems </b> <br>
+                                    Fedor Shmarov.<br>
+                                    Abstract: Stochastic parametric hybrid systems provide a means of formalising
+automata with continuous nonlinear dynamics, discrete interruptions, and parametric
+uncertainty (e.g., randomness and/or nondeterminism).
+They can be used for modelling a vast class of cyber-physical
+systems -- machines comprising physical components orchestrated by a digital control
+(e.g., medical devices, self-driving cars, and aircraft autopilots).
+Assuring correct and safe behaviour of such systems is crucial as human lives are often involved.
+
+One of the main problems in system verification is reachability analysis. It amounts to
+determining whether the studied model reaches an unsafe state during its evolution.
+Introduction of parametric randomness allows the formulation of a quantitative version of the problem --
+computing the probability of reaching the undesired state.
+
+Reachability analysis is a highly challenging problem due to its general undecidability for hybrid systems
+and undecidability of nonlinear arithmetic (e.g., involving trigonometric functions) over the real numbers.
+A common approach in this case is to solve a simpler, yet useful, problem. In particular,
+there are techniques for solving reachability rigorously up to a given numerical precision.
+
+We study probabilistic reachability of hybrid systems with random
+and nondeterministic parameters, and we have developed two new distinct techniques: a formal approach,
+based on formal reasoning which provides absolute numerical guarantees;
+and a combined formal-statistical approach, utilising validated Monte Carlo sampling to give statistical
+guarantees. The former computes an interval which is formally guaranteed to
+contain the exact reachability probability value. We have shown that for the systems without nondeterministic parameter
+the size of the interval can be reduced to an arbitrarily small positive value.
+The statistical approach returns an interval that takes into account numerical errors in the samples and
+contains the exact probability value with some statistical confidence.
+By providing weaker guarantees, it is capable of handling systems with large number of parameters.
+
+Both developed techniques were implemented in our tool ProbReach,
+which has been applied to several realistic case studies such as the
+synthesis of safe and robust controllers for the artificial pancreas and the design of phototherapy treatment for psoriasis.<br>
+<hr>
+    
+<b>Computing the mutational robustness of gene regulatory network.</b> <br>
+                                    Mirco Giacobbe, Ashutosh Gupta, Calin Č. Guet, Thomas A. Henzinger, Tiago Paixão, and
+Tatjana Petrov.<br>
+                                    Abstract: Robustness against genetic and environmental perturbations is one of the defining features of biological systems and its evolution is one of the current topics in evolutionary biology. In order to study robustness with respect to certain viability properties, evolutionary biologists use weighted models of gene regulatory networks of the cells, where weights encode strengths of interactions which induce a state transition system. Using classic numerical methods, the robustness can be approximately estimated by simulating the network over a certain number of randomly sampled weights. We want to demonstrate that statistical simulation-based methods can be replaced by formal-verification techniques that can give higher assurance and precision. We formalize the viability in terms of temporal logics and we apply model checking techniques to verify, rather than simulate, the robustness of gene regulatory networks.<br>
+
+                                    
+                                   
+<hr>
 
 </div>
 
