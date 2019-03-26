@@ -1,4 +1,4 @@
-# Call for Abstracts
+# DARS 2019: CALL FOR ABSTRACTS
 
 DARS 2019: 4th Workshop on the Design and Analysis of Robust Systems
 https://sites.google.com/view/dars2019/
@@ -23,13 +23,16 @@ Topics of interest include (but are not limited to):
 DARS is intended to be a forum for exchanging the latest scientific trends between researchers and practitioners interested in various notions of system robustness, application-specific or otherwise.  As a consequence, the workshop will NOT have formal proceedings. We encourage submission of abstracts that address any of the aforementioned topics of interest and cover recently published results as well as work in progress.
 
 # Submission Instructions
-DARS solicits extended abstracts, which should be submitted via Easychair at:https://easychair.org/conferences/?conf=dars2019
+DARS solicits extended abstracts, which should be submitted via Easychair at:
+
+    https://easychair.org/conferences/?conf=dars2019
+
 Abstracts should be in PDF form, up to 3 pages in length, with 1-inch margins and at least 10-point font size, and may contain up to three figures. Abstracts should list the full names, affiliations, and contact information of all authors. If you are interested in demonstrating a technology you are working on at the workshop, including software tools, please indicate so in your abstract submission.
 Abstracts will be reviewed by the Program Committee, and will be accepted for either an oral presentation or a poster. Accepted abstracts will be posted to the workshop's website.
 
 # Important Dates
 
-    * Submission deadline: May 1, 2019 (DELAYED)
+    * Submission deadline: May 1, 2019 (DEADLINE EXTENDED)
     * Notification: May 24, 2019
     * Workshop: July 13, 2019 (during CAV)
 
